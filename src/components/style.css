@@ -1,3 +1,16 @@
 .login__button{
     border: none;
 }
+.nav_signup{
+    text-decoration: none;
+    color: black;
+    
+
+}
+li{
+    list-style-type: none;
+}
+.nav_signup:hover{
+    color: rgb(59, 196, 189);
+
+}

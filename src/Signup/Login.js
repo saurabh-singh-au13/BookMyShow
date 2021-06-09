@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import './style.css'
+
+
+
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
@@ -41,7 +46,7 @@ class Login extends Component {
                     <span>
                         <div> Signed In !!!</div>
                         <button onClick={() => firebase.auth().signOut()}>Signed Out </button>
-                     
+
                         <h3>Welcome {firebase.auth().currentUser.displayName}</h3>
                     </span>
                 ) : (
@@ -51,7 +56,10 @@ class Login extends Component {
                     />
                 )
                 }
+                <div>
+                    <li > <Link to={'/home'} className="nav_link" style={{ color: "red", fontSize: "large" }}> Back To Home   </Link></li>
 
+                </div>
 
             </div>
         )
