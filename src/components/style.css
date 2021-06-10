@@ -1,6 +1,4 @@
-.login__button{
-    border: none;
-}
+
 .nav_signup{
     text-decoration: none;
     color: black;
@@ -11,6 +9,15 @@ li{
     list-style-type: none;
 }
 .nav_signup:hover{
-    color: rgb(59, 196, 189);
+    color: rgb(93, 145, 102);
+
+}
+.nav_link{
+    text-decoration: none;
+    color: black;
+
+}
+.form-control{
+    width: 50%;
 
 }

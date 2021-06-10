@@ -2,7 +2,10 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Login from './Signup/Login'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from './Home/Index';
+import Cards from './Upcomming/index'
+
+import Welcome from './Welcome/index'
+
 
 
 function App() {
@@ -13,8 +16,11 @@ function App() {
         
         
         <Switch>
+          <Route exact path="/" component={Welcome}/>
           <Route exact path="/home" component={Navbar} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/upcomming" component={Cards} />
+        
 
         </Switch>
 
